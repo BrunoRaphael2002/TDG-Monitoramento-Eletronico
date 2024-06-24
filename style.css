@@ -1,0 +1,248 @@
+header{
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+ position: fixed;
+ top: 0;
+
+   
+
+}
+
+
+
+nav img{
+    width: 60px;
+}
+
+.CTA{
+    height:100vh;
+    margin: 46px auto;
+    display: flex;
+  
+    align-items: center; 
+    flex-direction: column;
+     gap: 40px;
+     padding: 50px 0;
+     text-align: center;
+
+  
+     background: rgb(0,54,145);
+     background: radial-gradient(circle, rgba(0,54,145,1) 0%, rgba(0,25,62,1) 100%);
+}
+
+.video{
+   
+
+        padding: 10px;
+        width: 660px; /* Mantendo a largura como está */
+        height: 420px; /* Ajustando a altura para 600px, por exemplo */
+        border-radius: 15px;
+        /* Outros estilos conforme necessário */
+    
+    
+ 
+  
+   border: 1px solid rgb(255, 68, 0);
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem orangered,
+            0 0 0.8rem orangered,
+            0 0 2.8rem orangered,
+            inset 0 0 1.3rem orangered; 
+}
+
+.texto-cta h1{
+    width: 800px;
+    color: #fff;
+   padding: 10px;
+    
+}
+
+
+.button-cta{
+    background-color: #09ad24;
+    color: white;
+    padding: 20px 40px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #00ff40;
+    color: #ffffff;
+}
+
+.sobre, .prova-social{
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+.lista01{
+   
+    
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: 100%;
+    gap: 40px;
+    padding: 20px 30px;
+    list-style: none;
+   
+    
+}
+
+
+.itemlista{
+    width: 400px;
+   padding: 20px;
+  
+}
+
+.prova-social {
+    padding: 40px 20px; /* Espaçamento interno da seção de depoimentos */
+    text-align: center; /* Alinhamento centralizado do conteúdo */
+}
+
+.box-card{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: 100%;
+   
+    padding: 20px 30px;
+    list-style: none;
+}
+
+.card-depoimentos {
+    display: flex;
+
+    justify-content: center;
+    gap: 20px;
+     /* Centraliza os cards horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.content-dep {
+  width: 400px;
+    padding: 20px;
+    background-color: #f0f0f0; /* Cor de fundo opcional para os cards */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+}
+
+.content-dep img {
+    width: 80px; /* Tamanho da imagem do perfil */
+    height: 80px;
+    border-radius: 50%; /* Borda arredondada para a imagem */
+    margin-bottom: 10px;
+   
+}
+
+
+
+
+.footer {
+    background-color: #096aad;
+    color: #fff;
+    padding-top: 10px ;
+}
+
+.footer-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: -129px;
+    
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+   
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 5px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+.footer-bottom {
+    background-color: #075a8d;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+/*
+#096aad
+#f47434
+*/  
+

@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --color:#ffff;
+}
+
+.limitar-sessao{
+    max-width: 1024px;
+    margin: 0 auto; /* Isso centraliza a section na página */
+    /*  padding: 0 20px; Adiciona um espaçamento interno opcional */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+
