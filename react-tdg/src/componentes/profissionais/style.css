@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #0066ff;
+    border: 1px solid #dddddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -33,17 +33,18 @@
   .professional-card__name {
     font-size: 1.5em;
     margin: 10px 0;
+    color: white;
   }
   
   .professional-card__position {
     font-size: 1.2em;
-    color: #666;
+    color: #ffffff;
     margin: 10px 0;
   }
   
   .professional-card__description {
     font-size: 1em;
-    color: #333;
+    color: #ffffff;
     margin: 10px 0;
   }
   
@@ -53,5 +54,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
   }
   

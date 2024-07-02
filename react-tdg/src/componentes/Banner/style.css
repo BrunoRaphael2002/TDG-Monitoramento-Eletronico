@@ -39,7 +39,7 @@
 }
 
 .banner-button {
-    background-color: #ff6347;
+    background-color: #ff8800;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -50,5 +50,5 @@
 }
 
 .banner-button:hover {
-    background-color: #e5533d;
+    background-color: #ff6600;
 }

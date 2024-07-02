@@ -62,11 +62,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6347;
+    color: #ff9d00;
 }
 
 .call-button {
-    background-color: #ff6347;
+    background-color: #ff8800;
     color: #ffffff;
     padding: 40px 30px;
   height: 100%;
@@ -79,5 +79,5 @@ nav ul li a:hover {
 }
 
 .call-button:hover {
-    background-color: #e5533d;
+    background-color: #e5993d;
 }

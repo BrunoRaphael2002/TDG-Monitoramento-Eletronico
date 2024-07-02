@@ -52,7 +52,7 @@ function App() {
             />
 
 
-    <ProfessionalsList/>
+   
 
 
     <div className='titulo'>
@@ -86,7 +86,7 @@ function App() {
 
 </div>
 
-
+    <ProfessionalsList/>
     
     <Banner/>
       

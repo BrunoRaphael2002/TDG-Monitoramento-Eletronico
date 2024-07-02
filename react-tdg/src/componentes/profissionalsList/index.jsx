@@ -8,7 +8,7 @@ const ProfessionalsList = () => {
 
 <div className='titulo'>
           <h3 >Serviços</h3>
-                <h1>Conheça nossos serviços</h1>
+                <h1>Conheça nossos colaboradores</h1>
         </div>
     <div className="professionals-list">
       {professionals.map(professional => (
