@@ -1,0 +1,41 @@
+
+.inline-card {
+    display: flex;
+    align-items: center;
+   border-left:1px solid ;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+    overflow: hidden;
+    flex: 1 0 30%; /* Ajuste para permitir até 3 cards por linha */
+   padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.inline-card-image {
+    width: 40px;
+ 
+    object-fit: cover;
+}
+
+.inline-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 150px);
+}
+
+.inline-card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.inline-card-description {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
