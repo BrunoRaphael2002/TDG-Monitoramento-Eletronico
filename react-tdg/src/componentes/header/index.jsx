@@ -18,8 +18,8 @@ export default function Header() {
                         <li><a href="#home">Home</a></li>
                         <li><a href="#sobre">Como funciona</a></li>
                         <li><a href="#servico">Depoimentos</a></li>
-                        <li><a href="#contato">Sobre</a></li>
-                        <li><a href="#contato">Trabalhe conosco</a></li>
+                        <li><a href="#con">Contato</a></li>
+                        
                     </ul>
                 </nav>
                 <div className="hamburger" onClick={toggleMenu}>
