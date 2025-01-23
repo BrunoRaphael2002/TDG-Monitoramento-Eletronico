@@ -1,31 +1,34 @@
-import Logo from './../../assets/logo.png'
-import './style.css'
+import Logo from './../../assets/logo.png';
+import './style.css';
+import { useState } from 'react';
 
 export default function Header() {
-  return (
-    <>
-    <header>
-    <img src={Logo} alt="Logo da Empresa" className="logo"/>
-    <div className="container">
-    
-   
-            <nav>
-           
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servico">Serviço</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-               
-               
-            </nav>
-         
-            <a href="tel:+5511999999999" className="call-button">5511999999999</a>
-        </div>
-       
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (
+        <header>
+            <img src={Logo} alt="Logo da Empresa" className="logo" />
+            <div className="container">
+                <nav>
+                    <ul className={isMenuOpen ? "active" : ""}>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Como funciona</a></li>
+                        <li><a href="#servico">Depoimentos</a></li>
+                        <li><a href="#contato">Sobre</a></li>
+                        <li><a href="#contato">Trabalhe conosco</a></li>
+                    </ul>
+                </nav>
+                <div className="hamburger" onClick={toggleMenu}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="tel:+5511999999999" className="call-button">Solicite um orçamento</a>
+            </div>
         </header>
-        </>
-  
-  )
+    );
 }

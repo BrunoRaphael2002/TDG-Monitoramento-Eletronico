@@ -1,34 +1,144 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+/* Variáveis Globais */
+:root {
+  /* Cores principais (da logo) */
+  --primary-blue: #0367A6;
+  --secondary-orange: #F28705;
+  --white: #ffffff;
+
+  /* Cores complementares */
+  --dark-blue: #02497C; /* Para contrastes e fundos */
+  --light-blue: #E8F4FB; /* Para fundos claros */
+  --dark-orange: #C86B04; /* Para estados ativos ou realces */
+  --gray-light: #F5F5F5; /* Para fundos neutros */
+  --gray-medium: #CCCCCC; /* Para bordas e divisores */
+  --gray-dark: #333333; /* Para textos e ícones */
+}
+
+/* Reset básico e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray-dark);
+  background-color: var(--gray-light);
+}
+
+/* Links */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--secondary-orange);
+}
+
+/* Botões */
+button {
+  font-family: inherit;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+button.primary:hover {
+  background-color: var(--dark-blue);
+  transform: scale(1.05);
+}
+
+button.secondary {
+  background-color: var(--secondary-orange);
+  color: var(--white);
+}
+
+button.secondary:hover {
+  background-color: var(--dark-orange);
+  transform: scale(1.05);
+}
+
+/* Cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-blue);
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+/* Textos */
+p {
+  margin-bottom: 1.5em;
+  color: var(--gray-dark);
+}
+
+strong {
+  color: var(--secondary-orange);
+}
+
+/* Bordas e Divisores */
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--gray-medium);
+  margin: 2em 0;
+}
+
+/* Formulários */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray-medium);
+  border-radius: 5px;
+  font-size: 1em;
+  color: var(--gray-dark);
+  background-color: var(--white);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 5px var(--primary-blue);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   body {
-    font-family: Arial, sans-serif;
+      font-size: 14px;
   }
 
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Para distribuir os cards com espaço entre eles */
-    align-items: center;
-    width: 100%;
+  h1 {
+      font-size: 2em;
+  }
 
-  
-}
+  h2 {
+      font-size: 1.75em;
+  }
 
-.titulo{
- 
-    text-align: center;
-    padding: 20px;
-    margin: 30px;
-}
-
-.boxcard{
-    display: flex;
-   justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 100px 20px;
+  h3 {
+      font-size: 1.5em;
+  }
 }

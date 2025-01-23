@@ -1,54 +1,177 @@
+/* Sessão Hero */
 .banner {
-    background-image: url('../../assets/banner01.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 0 5%;
+    overflow: hidden;
+    color: var(--white);
 }
 
-.banner::before {
-    content: '';
+/* Vídeo de fundo */
+.banner-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um overlay escuro */
-    z-index: 1;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(20%);
 }
 
-.banner-content {
+/* Texto */
+.banner-text {
     position: relative;
-    z-index: 2;
+    z-index: 1;
+    max-width: 50%;
+    padding: 100px 20px;
 }
 
-.banner h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
+.banner-text h4 {
+    font-size: 1.2rem;
+    color: var(--secondary-orange);
+    margin-bottom: 0.5rem;
 }
 
-.banner p {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+.banner-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: var(--white);
 }
 
-.banner-button {
-    background-color: #ff6347;
-    color: white;
-    padding: 10px 20px;
+.banner-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+/* Botões */
+.banner-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.banner-button,
+.banner-play-button {
+    background-color: var(--secondary-orange);
+    color: var(--white);
+    padding: 1rem 1.5rem;
     border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.banner-play-button {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    font-weight: 400;
+    
+}
+
+.banner-button:hover,
+.banner-play-button:hover {
+    transform: scale(1.05);
 }
 
 .banner-button:hover {
-    background-color: #e5533d;
+    background-color: var(--dark-orange);
+}
+
+.banner-play-button:hover {
+    background-color: var(--dark-blue);
+}
+
+/* Modal de vídeo */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .banner-text {
+        max-width: 70%;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .banner-button,
+    .banner-play-button {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-text {
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .banner-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .banner-button,
+    .banner-play-button {
+        width: 100%;
+    }
 }
