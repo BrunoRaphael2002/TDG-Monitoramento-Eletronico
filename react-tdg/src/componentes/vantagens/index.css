@@ -1,0 +1,10 @@
+.vantagens{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     flex-direction: column;
+     line-height: 1.8rem;
+     padding: 20px;
+
+    }

@@ -1,5 +1,6 @@
 import './style.css';
 import Video from '../../assets/promo.mp4';
+import Thumbnail from '../../assets/thumb.png'; // Substitua pelo caminho da imagem da thumbnail
 import { useState } from 'react';
 
 const Banner = () => {
@@ -17,31 +18,34 @@ const Banner = () => {
                 Seu navegador não suporta vídeos HTML5.
             </video>
 
-        
-
             {/* Conteúdo do banner */}
-            <div className="banner-text">
-                <h4>+60 condomínios monitorados 24h</h4>
-                <h1>Economize até 50% sem abrir mão da segurança</h1>
-                <p>
-                    Com tecnologia avançada e inteligência artificial, a TDG Portaria Virtual
-                    proporciona até 50% de economia, atendimento e monitoramento 24h, e
-                    soluções personalizadas que valorizam seu patrimônio.
-                </p>
-                <div className="banner-buttons">
-                    <button className="banner-button">Venha nos conhecer</button>
-                    <button className="banner-play-button" onClick={toggleModal}>
-                         Veja como funciona
-                    </button>
+            <div className="banner-content">
+                <div className="banner-text">
+                    <h4>+60 condomínios monitorados 24h</h4>
+                    <h1>
+                        Somos os Pioneiros em Portaria Virtual trazendo Inovação e Segurança 24h para Seu Condomínio
+                    </h1>
+                    <p>
+                        Economize até 70% em custos operacionais sem abrir mão da segurança de qualidade! Com
+                        tecnologia de ponta e inteligência artificial, a TDG Portaria Virtual oferece monitoramento
+                        contínuo, soluções sob medida e atendimento de excelência, proporcionando mais segurança e
+                        economia para o seu condomínio.
+                    </p>
+                    <div className="banner-buttons">
+                        <button className="banner-button">Venha nos conhecer</button>
+                    </div>
+                </div>
+
+                {/* Thumbnail clicável */}
+                <div className="video-thumbnail" onClick={toggleModal}>
+                <img src={Thumbnail}></img>
                 </div>
             </div>
-
-        
 
             {/* Modal do vídeo */}
             {showModal && (
                 <div className="video-modal" onClick={toggleModal}>
-                    <div className="video-container">
+                    <div className="video-container" onClick={(e) => e.stopPropagation()}>
                         <video controls autoPlay>
                             <source src={Video} type="video/mp4" />
                             Seu navegador não suporta vídeos HTML5.

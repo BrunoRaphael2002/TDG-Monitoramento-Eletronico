@@ -1,0 +1,19 @@
+.sobre-empresa,
+.sobre-equipe{
+ display:  flex;
+ align-items: center;
+ justify-content: center;
+ padding: 20px;
+ text-align: left;
+
+}
+
+.sobre-empresa-content,
+.sobre-equipe-content{
+    width: 50%;
+    
+}
+
+.sobre-empresa-image{
+   width: 0%;
+}

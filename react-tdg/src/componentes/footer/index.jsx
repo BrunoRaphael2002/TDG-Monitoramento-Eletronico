@@ -1,4 +1,3 @@
-
 import './style.css';
 
 
@@ -10,13 +9,13 @@ const Footer = () => {
         
         </a>
         <a href="https://www.twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-        
+         
         </a>
         <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-       
+          
         </a>
         <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-        
+          
         </a>
       </div>
       <div className="navigation-links">
