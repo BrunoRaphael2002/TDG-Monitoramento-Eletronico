@@ -6,19 +6,19 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'O que é o Sistema de Manutenção Predial?',
+      question: 'Como funciona a TDG?',
       answer: 'É uma plataforma projetada para ajudar síndicos a gerenciar manutenções, organizar tarefas e enviar notificações automáticas.',
     },
     {
-      question: 'Como posso acessar o sistema?',
+      question: 'Como posso acessar o aplicativo?',
       answer: 'Você pode acessar o sistema através do nosso site ou aplicativo disponível para dispositivos móveis.',
     },
     {
-      question: 'Quais são os planos disponíveis?',
+      question: 'A TDG é confiavel?',
       answer: 'Oferecemos planos mensais com funcionalidades variadas, além de um suporte personalizado para cada cliente.',
     },
     {
-      question: 'O sistema envia notificações automáticas?',
+      question: 'A TDG envia notificações automáticas?',
       answer: 'Sim! Você pode configurar notificações automáticas para lembrar sobre manutenções programadas.',
     },
   ];

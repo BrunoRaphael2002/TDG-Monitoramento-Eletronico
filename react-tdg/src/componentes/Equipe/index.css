@@ -8,7 +8,7 @@
   
   /* Layout principal com Flexbox */
   .sobre-equipe {
-    background-color: var(--blue-darknes);
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,19 +31,18 @@
     width: 100%;
     max-width: 600px;
     height: 300px;
-    border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
   
   /* Conteúdo textual */
   .sobre-equipe-content {
-    flex: 0 0 60%; /* O texto ocupará 60% da largura */
+    flex: 0 0 50%; /* O texto ocupará 60% da largura */
     color: white;
     
   }
   
   .sobre-equipe-content h2 {
-    color: var(--secondary-orange);
+    color: var(--primary-blue);
     font-size: 24px;
     margin-bottom: 15px;
   }

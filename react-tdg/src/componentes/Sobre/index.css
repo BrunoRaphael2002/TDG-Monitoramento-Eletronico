@@ -5,23 +5,37 @@
     flex-wrap: wrap;
     padding: 40px;
     text-align: left;
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--blue-darknes);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     gap: 20px;
+    color: white;
 }
 
 .sobre-empresa-content {
     width: 50%;
     min-width: 300px;
+
 }
 
+.sobre-empresa-content h2{
+    color: white;
+}
+
+
+.sobre-empresa-content p{
+    color: white;
+}
 .sobre-empresa-video {
     width: 45%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+   
+}
+
+.sobre-empresa-video h2{
+    color: white;
 }
 
 .video-promo{

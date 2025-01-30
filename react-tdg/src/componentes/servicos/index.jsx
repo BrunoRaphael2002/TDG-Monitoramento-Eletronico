@@ -1,4 +1,5 @@
 import "./index.css";
+import camera from '../../../src/assets/cameraIA.jpeg'
 
 const Servicos = () => {
   return (
@@ -25,7 +26,7 @@ const Servicos = () => {
           <p>
             Nossas câmeras equipadas com Inteligência Artificial analisam continuamente o ambiente, detectando e alertando sobre comportamentos suspeitos em tempo real.
           </p>
-          <div className="imagem-placeholder">📷</div>
+          <div className="imagem-placeholder"><img src={camera} alt="" /></div>
           <button className="botao">Conheça Nossa Tecnologia</button>
         </div>
       </div>

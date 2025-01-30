@@ -46,7 +46,7 @@ const Banner = () => {
             {showModal && (
                 <div className="video-modal" onClick={toggleModal}>
                     <div className="video-container" onClick={(e) => e.stopPropagation()}>
-                        <video controls autoPlay>
+                        <video controls autoPlay className='video-banner'>
                             <source src={Video} type="video/mp4" />
                             Seu navegador não suporta vídeos HTML5.
                         </video>

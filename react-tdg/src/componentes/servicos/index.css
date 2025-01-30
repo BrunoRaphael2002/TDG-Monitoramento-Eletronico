@@ -71,6 +71,11 @@ h2 {
   color: #999;
 }
 
+.imagem-placeholder img{
+  width: 300px;
+ 
+}
+
 /* Botões */
 .botao {
   display: block;

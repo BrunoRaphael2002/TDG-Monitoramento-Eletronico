@@ -21,7 +21,7 @@
    .vantagem-card {
      background: #fff;
      padding: 20px;
-     border-radius: 10px;
+     border: 1px solid rgba(0, 0, 0, 0.361);
      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
      text-align: center;
      transition: transform 0.3s ease-in-out;

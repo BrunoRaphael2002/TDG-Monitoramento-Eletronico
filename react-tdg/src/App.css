@@ -4,7 +4,7 @@
   --primary-blue: #0367A6;
   --secondary-orange: #F28705;
   --white: #ffffff;
-  --blue-darknes : #1d3658;
+--blue-darknes : #1d3658;
   /* Cores complementares */
   --dark-blue: #02497C; /* Para contrastes e fundos */
   --light-blue: #E8F4FB; /* Para fundos claros */
@@ -25,12 +25,13 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--gray-dark);
   background-color: var(--gray-light);
 }
 
 /* Links */
 a {
-  
+  color: var(--primary-blue);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -72,7 +73,7 @@ button.secondary:hover {
 
 /* Cabeçalhos */
 h1, h2, h3, h4, h5, h6 {
-
+  color: var(--primary-blue);
   margin-bottom: 1em;
 }
 
@@ -91,7 +92,7 @@ h3 {
 /* Textos */
 p {
   margin-bottom: 1.5em;
-
+  color: var(--gray-dark);
 }
 
 strong {
@@ -129,6 +130,11 @@ input:focus, textarea:focus, select:focus {
       font-size: 14px;
   }
 
+  .video-thumbnail{
+    display: none;
+  }
+
+  
   h1 {
       font-size: 2em;
   }
