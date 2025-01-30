@@ -1,42 +1,54 @@
-import './index.css';
+
+import "./index.css";
+
+const vantagens = [
+  {
+    icon: "🛡️",
+    title: "Monitoramento 24/7",
+    description: "Vigilância ininterrupta com equipe especializada.",
+  },
+  {
+    icon: "💰",
+    title: "Economia",
+    description: "Reduza custos operacionais em até 70%.",
+  },
+  {
+    icon: "🔑",
+    title: "Controle de Acesso",
+    description: "Gestão eficiente via aplicativo móvel.",
+  },
+  {
+    icon: "🚨",
+    title: "Resposta Imediata",
+    description: "Atendimento rápido em emergências.",
+  },
+  {
+    icon: "📷",
+    title: "Câmeras com IA",
+    description: "Detecção inteligente de ameaças.",
+  },
+  {
+    icon: "⏰",
+    title: "Suporte 24h",
+    description: "Assistência e manutenção contínua.",
+  },
+];
 
 const Vantagens = () => {
-    return (
-        <section className="vantagens">
-            <h2>Vantagens</h2>
-            <div className="vantagens-content">
-                <ul>
-                    <li>Monitoramento 24h com controle de acesso remoto.</li>
-                    <li>Economia de até 70% nos custos operacionais, mantendo a segurança.</li>
-                    <li>Controle de acesso para moradores, visitantes e prestadores de serviço via aplicativo.</li>
-                    <li>Atendimento imediato e personalizado com identificação de chamadas.</li>
-                    <li>Sistema de alarme perimetral com monitoramento constante.</li>
-                    <li>Manutenção preventiva e corretiva 24h de todos os equipamentos.</li>
-                </ul>
-
-                <h3>Além do monitoramento, oferecemos um pacote completo de soluções para aprimorar a segurança:
-                </h3>
-
-                <ul>
-                    
-                <li>Câmeras Full HD com Inteligência Artificial.</li>
-
-            <li>Leitores faciais nas portas principais com fechaduras magnéticas.</li>
-
-            <li>Sistema de energia independente para garantir segurança contínua.</li>
-
-            <li>Câmeras e comunicação dentro dos elevadores.</li>
-
-        <li>Controle exclusivo de acesso ao portão da garagem.</li>
-        
-        <li>Sistema de alarme perimetral com monitoramento 24h.</li>
-
-        <li>Sirene de voz para emergências, acionamento remoto.</li>
-
-                </ul>
-            </div>
-        </section>
-    );
+  return (
+    <section className="vantagens">
+      <h2>Nossas Vantagens</h2>
+      <div className="vantagens-grid">
+        {vantagens.map((item, index) => (
+          <div key={index} className="vantagem-card">
+            <span className="vantagem-icon">{item.icon}</span>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Vantagens;

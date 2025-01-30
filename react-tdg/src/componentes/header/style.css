@@ -1,11 +1,11 @@
-/* Header */
+/* HEADER */
 header {
-    background-color: var(--white);
-    color: var(--gray-dark);
+    background-color: var(--blue-darknes);
+    color: var(--white);
     padding: 0 20px;
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 1000;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -13,21 +13,20 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Container */
+/* CONTAINER */
 .container {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     gap: 20px;
 }
 
-/* Logo */
+/* LOGO */
 .logo {
     max-height: 70px;
     padding: 10px 0;
 }
 
-/* Navegação */
+/* MENU */
 nav {
     display: flex;
     align-items: center;
@@ -44,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--gray-dark);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -54,61 +53,109 @@ nav ul li a:hover {
     color: var(--secondary-orange);
 }
 
-/* Botão de chamada */
+/* BOTÃO DE CHAMADA */
 .call-button {
-    background-color: var(--secondary-orange);
+    background: linear-gradient(135deg, var(--secondary-orange), var(--dark-orange));
     color: var(--white);
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border-radius: 8px;
     text-decoration: none;
     font-size: 1em;
-    font-weight: 500;
-    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(255, 94, 0, 0.3);
 }
 
 .call-button:hover {
-    background-color: var(--dark-orange);
+    background: linear-gradient(135deg, var(--dark-orange), var(--secondary-orange));
     transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(255, 94, 0, 0.5);
 }
 
-/* Menu Hamburger */
+/* MENU HAMBURGER */
 .hamburger {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    z-index: 1100;
 }
 
 .hamburger div {
-    width: 30px;
-    height: 3px;
-    background-color: var(--gray-dark);
-    transition: transform 0.3s;
+    width: 35px;
+    height: 4px;
+    background-color: var(--white);
+    border-radius: 3px;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Responsividade */
+/* Animação do menu aberto */
+.hamburger.open div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     nav ul {
-        display: none; /* Oculta o menu padrão */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 80px;
         right: 0;
-        background-color: var(--white);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        padding: 10px 0;
+        background-color: var(--blue-darknes);
+        box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 280px;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        text-align: right;
+        gap: 15px;
     }
 
     nav ul.active {
-        display: flex; /* Mostra o menu ao clicar no hamburger */
+        display: flex;
+    }
+
+    nav ul li a {
+        color: var(--white);
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        transition: background 0.3s, padding 0.3s;
+    }
+
+    nav ul li a:hover {
+        background: var(--secondary-orange);
+        padding-left: 20px;
+        border-radius: 5px;
     }
 
     .hamburger {
-        display: flex; /* Exibe o menu hamburger */
+        display: flex;
     }
 
+    /* Botão no menu aberto */
     .call-button {
-        display: none; /* Oculta o botão de chamada em telas menores */
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        padding: 12px;
+        font-size: 1.1em;
+        background: linear-gradient(135deg, var(--secondary-orange), var(--dark-orange));
+        box-shadow: 0 4px 10px rgba(255, 94, 0, 0.3);
+    }
+
+    .call-button:hover {
+        background: linear-gradient(135deg, var(--dark-orange), var(--secondary-orange));
+        transform: scale(1.08);
+        box-shadow: 0 6px 14px rgba(255, 94, 0, 0.5);
     }
 }

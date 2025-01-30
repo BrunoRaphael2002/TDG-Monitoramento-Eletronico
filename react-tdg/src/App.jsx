@@ -5,11 +5,10 @@ import Footer from './componentes/footer'
 import SobreEmpresa from './componentes/Sobre'
 import SobreEquipe from './componentes/Equipe'
 import Vantagens from './componentes/vantagens'
-import CameraComIA from './componentes/cameraIA'
-import AppTdg from './componentes/AplicativoTDG'
-import Depoimentos from './componentes/depoimentos'
 import Contato from './componentes/contato'
 import FAQ from './componentes/faq'
+import Metricas from './componentes/metricas'
+import Servicos from './componentes/servicos'
 
 
 
@@ -22,12 +21,11 @@ function App() {
     <>
      <Header/>
      <Banner/>
+     <Metricas/>
+     <Vantagens/>
      <SobreEmpresa/>
    <SobreEquipe/>
-   <Vantagens/>
-   <CameraComIA/>
-   <AppTdg/>
-   <Depoimentos/>
+   <Servicos/>
    <Contato/>
    <FAQ/>
     <Footer/>

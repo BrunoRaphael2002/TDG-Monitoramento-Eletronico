@@ -19,15 +19,14 @@ export default function Header() {
                         <li><a href="#sobre">Como funciona</a></li>
                         <li><a href="#servico">Depoimentos</a></li>
                         <li><a href="#con">Contato</a></li>
-                        
+                        <li><a href="tel:+5511999999999" className="call-button">Solicite um orçamento</a></li>
                     </ul>
                 </nav>
-                <div className="hamburger" onClick={toggleMenu}>
+                <div className={`hamburger ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <a href="tel:+5511999999999" className="call-button">Solicite um orçamento</a>
             </div>
         </header>
     );

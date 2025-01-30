@@ -1,13 +1,14 @@
 /*import EquipeImage from '../../assets/thumb.png'; // Substitua pelo caminho correto da imagem */
-
+import './index.css';
+import equipe from '../../../src/assets/equipe.jpeg'
 
 
 const SobreEquipe = () => {
     return (
-        <div className="sobre">
+        <div className="sobre-container">
             <section className="sobre-equipe">
                 <div className="sobre-equipe-image">
-                    <img src="" alt="Equipe de monitoramento da TDG Portaria Virtual em ação" />
+                    <img src={equipe} alt="Equipe de monitoramento da TDG Portaria Virtual em ação" />
                 </div>
                 <div className="sobre-equipe-content">
                     <h2>Equipe de Monitoramento - Profissionais Altamente Qualificados</h2>
