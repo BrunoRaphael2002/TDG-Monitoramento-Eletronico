@@ -1,6 +1,6 @@
 import './style.css';
 import Video from '../../assets/promo.mp4';
-import Thumbnail from '../../assets/thumb.png'; // Substitua pelo caminho da imagem da thumbnail
+// import Thumbnail from '../../assets/thumb.png'; // Thumbnail comentada
 import { useState } from 'react';
 
 const Banner = () => {
@@ -32,14 +32,17 @@ const Banner = () => {
                         economia para o seu condomínio.
                     </p>
                     <div className="banner-buttons">
-                        <button className="banner-button">Venha nos conhecer</button>
+                        <button className="banner-button">Solicite um orçamento</button>
+                        <button className="video-button" onClick={toggleModal}>🎥 Assista ao vídeo</button>
                     </div>
                 </div>
 
-                {/* Thumbnail clicável */}
+                {/* Thumbnail comentada */}
+                {/*
                 <div className="video-thumbnail" onClick={toggleModal}>
-                <img src={Thumbnail}></img>
+                    <img src={Thumbnail} alt="Thumbnail do vídeo" />
                 </div>
+                */}
             </div>
 
             {/* Modal do vídeo */}

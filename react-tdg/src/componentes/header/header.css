@@ -1,0 +1,202 @@
+/* HEADER */
+header {
+    background-color: var(--blue-darknes);
+    color: var(--white);
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index:999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* LOGO */
+.logo {
+    max-height: 70px;
+    padding: 10px 0;
+    object-fit: contain;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown span {
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+
+
+/* Estilo do submenu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--blue-darknes);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    min-width: 180px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  color:  var(--secondary-orange);
+}
+
+/* Ativar o submenu ao passar o mouse ou clicar */
+.dropdown-menu.open {
+    display: block;
+}
+
+/* BOTÃO DE CHAMADA */
+.call-button {
+    background: linear-gradient(135deg, var(--secondary-orange), var(--dark-orange));
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+   
+  
+}
+
+.call-button:hover {
+    background: linear-gradient(135deg, var(--dark-orange), var(--dark-orange));
+   color: white;
+    transform: scale(1.05);
+
+    
+}
+
+/* MENU HAMBURGUER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger div {
+    width: 35px;
+    height: 4px;
+    background-color: var(--white);
+    border-radius: 3px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Animação do menu aberto */
+.hamburger.open div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: var(--blue-darknes);
+        box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 280px;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        text-align: right;
+        gap: 15px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        color: var(--white);
+        font-size: 15px;
+        padding: 10px;
+        display: block;
+        transition: background 0.3s, padding 0.3s;
+    }
+
+    nav ul li a:hover {
+        background: var(--secondary-orange);
+        padding-left: 20px;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Botão no menu aberto */
+    .call-button {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        padding: 12px;
+        background: linear-gradient(135deg, var(--secondary-orange), var(--dark-orange));
+        
+    }
+
+ 
+}

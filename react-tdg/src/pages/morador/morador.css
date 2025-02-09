@@ -1,0 +1,96 @@
+.morador-container,
+.sindico-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seção Hero */
+.morador-hero,
+.sindico-hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.morador-hero h1,
+.sindico-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.morador-hero h2,
+.sindico-hero h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Seção de Recursos */
+.morador-recursos,
+.sindico-recursos {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.morador-recursos h2,
+.sindico-recursos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.morador-recursos ul,
+.sindico-recursos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.morador-recursos li,
+.sindico-recursos li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* Botão de apresentação */
+.morador-apresentacao,
+.sindico-apresentacao {
+    text-align: center;
+    padding: 20px;
+}
+
+.morador-button,
+.sindico-button {
+    background: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.morador-button:hover,
+.sindico-button:hover {
+    background: #0056b3;
+}
+
+/* Rodapé */
