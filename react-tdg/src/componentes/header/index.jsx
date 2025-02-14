@@ -40,7 +40,7 @@ export default function Header() {
                         <li><a href="#">empresa</a></li>
 
                         {/* MENU DROPDOWN */}
-                        <li 
+                     { /*  <li 
                             className="dropdown" 
                             onClick={toggleDropdown} 
                             ref={dropdownRef}
@@ -50,7 +50,7 @@ export default function Header() {
                                 <li><Link to="/morador">Para Moradores</Link></li>
                                 <li><Link to="/sindico">Para Síndicos</Link></li>
                             </ul>
-                        </li>
+                        </li>*/}
 
                         <li><a href="#">Contato</a></li>
                         <li><a href="tel:+5511999999999" className="call-button">Solicite um orçamento</a></li>
