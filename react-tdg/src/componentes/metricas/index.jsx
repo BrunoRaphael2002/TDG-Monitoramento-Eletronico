@@ -6,7 +6,7 @@ const Metricas = () => {
         <section className="metricas">
             <div className="metricas-item">
                 <FaUsers className="metricas-icon" />
-                <h3>60+</h3>
+                <h3>50+</h3>
                 <p>Condomínios Monitorados</p>
             </div>
             <div className="metricas-item">

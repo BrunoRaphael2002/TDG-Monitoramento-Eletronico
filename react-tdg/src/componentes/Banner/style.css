@@ -5,12 +5,15 @@
     align-items: center;
     justify-content: center;
     height: 100vh; /* Reduzido para melhor ajuste */
-    padding: 0 5%;
-    overflow: hidden;
+    padding: 50px;
     color: var(--white);
     text-align: center;
+    text-transform: uppercase;
 }
 
+.destaque{
+    color: orange;
+}
 /* Vídeo de fundo */
 .banner-video {
     position: absolute;
@@ -68,14 +71,18 @@
 .banner-buttons {
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 25px;
+    max-width: fit-content;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .banner-button, .video-button {
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 10rem;
     border: none;
     border-radius: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }

@@ -37,7 +37,7 @@ export default function Header() {
                 <nav>
                     <ul className={isMenuOpen ? "active" : ""}>
                         <li><Link to="/">Home</Link></li>
-                        <li><a href="">empresa</a></li>
+                        <li><a href="#">empresa</a></li>
 
                         {/* MENU DROPDOWN */}
                         <li 
@@ -52,7 +52,7 @@ export default function Header() {
                             </ul>
                         </li>
 
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#">Contato</a></li>
                         <li><a href="tel:+5511999999999" className="call-button">Solicite um orçamento</a></li>
                     </ul>
                 </nav>

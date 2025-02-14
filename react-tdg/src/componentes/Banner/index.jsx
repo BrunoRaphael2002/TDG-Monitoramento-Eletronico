@@ -21,16 +21,16 @@ const Banner = () => {
             {/* Conteúdo do banner */}
             <div className="banner-content">
                 <div className="banner-text">
-                    <h4>+60 condomínios monitorados 24h</h4>
+                    <h4>+50 condomínios monitorados 24h</h4>
                     <h1>
-                        Somos os Pioneiros em Portaria Virtual trazendo Inovação e Segurança 24h para Seu Condomínio
+                        Somos os Pioneiros em Portaria Virtual trazendo Inovação, Segurança 24h, e <span className='destaque'>economia de até 70%</span> para Seu Condomínio
                     </h1>
-                    <p>
+                   {/* <p>
                         Economize até 70% em custos operacionais sem abrir mão da segurança de qualidade! Com
                         tecnologia de ponta e inteligência artificial, a TDG Portaria Virtual oferece monitoramento
                         contínuo, soluções sob medida e atendimento de excelência, proporcionando mais segurança e
                         economia para o seu condomínio.
-                    </p>
+                    </p>*/}
                     <div className="banner-buttons">
                         <button className="banner-button">Solicite um orçamento</button>
                         <button className="video-button" onClick={toggleModal}>🎥 Assista ao vídeo</button>

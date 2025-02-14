@@ -49,3 +49,32 @@
      color: #666;
    }
    
+   /* Botões */
+   .container-button {
+
+  padding: 50px 20px ;
+
+}
+
+.button-info {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-info a {
+  color: white;
+}
+
+.button-info {
+  background-color: var(--secondary-orange);
+  color: var(--white);
+}
+
+.button-info:hover {
+  background-color: var(--dark-orange);
+  transform: scale(1.05);
+}

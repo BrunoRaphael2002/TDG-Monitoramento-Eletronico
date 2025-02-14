@@ -47,6 +47,8 @@ const Vantagens = () => {
           </div>
         ))}
       </div>
+
+      <div className="container-button"><button className="button-info"><a href="button-info">Saiba mais</a></button></div>
     </section>
   );
 };
