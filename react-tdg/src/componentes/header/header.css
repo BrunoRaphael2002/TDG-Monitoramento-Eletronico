@@ -23,7 +23,7 @@ header {
 
 /* LOGO */
 .logo {
-    max-height: 70px;
+    max-height: 100px;
     padding: 10px 0;
     object-fit: contain;
 }
