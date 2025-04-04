@@ -53,7 +53,7 @@ export default function Header() {
                         </li>*/}
 
                         <li><a href="#">Contato</a></li>
-                        <li><a  href="https://wa.me/558391298598?text=Ol%C3%A1%20vim%20pelo%20site%20da%20Tdg%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"  target="_blank" rel="noopener noreferrer" className="call-button">Solicite um orçamento</a></li>
+                        <li><a  href="https://w.app/kc7qez"  target="_blank" rel="noopener noreferrer" className="call-button">Solicite um orçamento</a></li>
                     </ul>
                 </nav>
 
