@@ -22,7 +22,7 @@ const Contato = () => {
     Telefone: ${formData.telefone}
     Mensagem: ${formData.mensagem}`;
 
-    const telefoneWhatsApp = "5583991298598" // Número do WhatsApp sem espaços e com código do país
+    const telefoneWhatsApp = "558391298598" // Número do WhatsApp sem espaços e com código do país
     const urlWhatsApp = `https://wa.me/${telefoneWhatsApp}?text=${encodeURIComponent(
       mensagemWhatsApp
     )}`;
