@@ -86,7 +86,11 @@ header {
     flex-wrap: wrap;
 }
 
-.banner-button,
+.banner-button > a{
+    color: white;
+}
+
+.banner-button, 
 .video-button {
     padding: 0.8rem 3rem;
     border: none;

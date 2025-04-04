@@ -1,63 +1,80 @@
-/* Ajuste do container principal */
+/* Container principal da seção */
 .sobre-empresa {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 80px 20px;
+    box-sizing: border-box;
 }
 
 /* Seção de texto */
 .sobre-empresa-content {
-   align-items: center;
+    flex: 1;
     text-transform: uppercase;
 }
 
 .sobre-empresa-content h2 {
-    font-size: 34px;
+    font-size: 36px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .sobre-empresa-content h2 span {
-    color: #4aa9d8; /* Azul do "Funciona" */
+    color: #4aa9d8;
 }
 
 .sobre-empresa-content p {
     font-size: 20px;
-    color: #777;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* Seção de vídeo */
 .sobre-empresa-video {
+    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
+/* Estilo para o iframe do vídeo */
 .video-promo {
     width: 100%;
-    max-width: 600px; /* Define um tamanho máximo para o vídeo */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
     .sobre-empresa {
         flex-direction: column;
         text-align: center;
+        padding: 60px 20px;
     }
 
-    .sobre-empresa-video {
-        width: 100%;
+    .sobre-empresa-content {
+        margin-bottom: 30px;
+    }
+
+    .sobre-empresa-content h2 {
+        font-size: 30px;
+    }
+
+    .sobre-empresa-content p {
+        font-size: 18px;
     }
 
     .video-promo {
         max-width: 100%;
-        height: auto;
     }
 }

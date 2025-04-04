@@ -1,5 +1,4 @@
 import './index.css';
-import portaria from '../../../src/assets/tdgpromo.mp4';
 
 const ComoFunciona = () => {
     return (
@@ -9,9 +8,15 @@ const ComoFunciona = () => {
                 <p>Assista o vídeo ao lado e veja como funciona</p>
             </div>
             <div className="sobre-empresa-video">
-                <video controls className="video-promo">
-                    <source src={portaria} type="video/mp4" />
-                </video>
+                <iframe
+                    className="video-promo"
+                    src="https://www.youtube.com/embed/flqMla_n0Xw?si=hTdRCF8CQR2gdLci"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                ></iframe>
             </div>
         </section>
     );

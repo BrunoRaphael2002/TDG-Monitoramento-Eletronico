@@ -19,7 +19,6 @@ function Home() {
        <ComoFunciona/>
        <Vantagens/>
      <Contato/>
-     <FAQ/>
       <Footer/>
       </>
     )
